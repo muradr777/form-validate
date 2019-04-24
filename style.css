@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+}
+body {
+    font-family: 'Arial';
+    background-color: #eee;
+}
+
+.main-wrapper > form {
+    width: 600px;
+    margin: 200px auto;
+    padding: 30px 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background-color: #ffffff;
+}
+
+.form-group {
+    display: flex;
+    padding: 10px;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.form-group > label {
+    width: 30%;
+}
+
+.form-group > input {
+    width: 65%;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.error-message {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+    color: orangered;
+}
+
+.submit-item {
+    outline: none;
+    color: #0dc377;
+    cursor: pointer;
+    padding: 8px 20px;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px solid #0dc377;
+    -webkit-transition: background-color .3s, color .3s;
+    -moz-transition: background-color .3s, color .3s;
+    -ms-transition: background-color .3s, color .3s;
+    -o-transition: background-color .3s, color .3s;
+    transition: background-color .3s, color .3s;
+}
+
+.submit-item.disabled {
+    opacity: .6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.submit-item:hover, .submit-item:focus {
+    color: #ffffff;
+    background-color: #0dc377;
+}
